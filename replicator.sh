@@ -27,4 +27,4 @@ if [ ! -d ${dest}/${name} ]; then
 	mkdir ${dest}/${name}
 fi
 
-rsync -rp $target ${dest}/${name}
+rsync -rp --checksum $target ${dest}/${name}
